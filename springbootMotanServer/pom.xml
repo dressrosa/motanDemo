@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>spring-boot-starter-web</artifactId>
+	<name>Spring Boot Web Starter</name>
+	<description>Spring Boot Web Starter</description>
+	<url>http://projects.spring.io/spring-boot/</url>
+
+	<properties>
+		<main.basedir>${basedir}/../..</main.basedir>
+		<redis.version>2.0</redis.version>
+	</properties>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.4.0.RELEASE</version>
+	</parent>
+	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+		<!--fastJson -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.8</version>
+		</dependency>
+
+		<!-- google java lib -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>19.0</version>
+		</dependency>
+
+		<!-- common lang -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
+
+		<!--mongoDB -->
+		
+		<!--新浪 motan -->
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-core</artifactId>
+			<version>0.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-transport-netty</artifactId>
+			<version>0.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-springsupport</artifactId>
+			<version>0.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-registry-zookeeper</artifactId>
+			<version>0.2.1</version>
+		</dependency>
+		<!-- http://mvnrepository.com/artifact/io.netty/netty-all -->
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.0.23.Final</version>
+		</dependency>
+
+		<!--第三方配置 -->
+
+	</dependencies>
+	<!--创建可执行的jar -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
